@@ -42,13 +42,13 @@
            ============================================================ */
 
       /* 사례 A */
-      .notice-box {
+      .notice {
         background: yellow;
         padding: 10px;
       }
 
       /* 사례 B */
-      #card .title {
+      #card {
         color: gray;
       }
 
@@ -58,7 +58,7 @@
 
       /* 사례 C */
       .btn {
-        background: royalblue !important;
+        background: royalblue ;
         color: white;
         padding: 8px 16px;
         border: none;
@@ -217,7 +217,7 @@
 
     <h3>사례 B : 제목이 crimson(빨강)이어야 하는데 회색으로 나온다</h3>
     <div id="card">
-      <h4 class="title">이 제목은 crimson이어야 한다.</h4>
+      <h4 >이 제목은<div class="title">crimson</div> 이어야 한다.</h4>
     </div>
 
     <h3>사례 C : 위험 버튼이 crimson이어야 하는데 파란색으로 나온다</h3>
@@ -232,8 +232,8 @@
         사례 B의 원인 :
         사례 B의 수정 방법 :
 
-        사례 C의 원인 :
-        사례 C의 수정 방법 :
+        사례 C의 원인 : btc에 impotant 되어있어서 패딩하면 블루를 그대로 받음.
+        사례 C의 수정 방법 : impotant 지움.
 
       [진단 순서 - 막히면 이 순서대로 확인한다]
         1단계. 선택자가 대상을 잡고 있는가?
