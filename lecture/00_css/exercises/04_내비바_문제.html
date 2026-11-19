@@ -15,26 +15,49 @@
             font-family: "Malgun Gothic", sans-serif;
         }
 
+        .header {
+            height: 150px;
+            width: 300px;
+            position: sticky;
+        }
+
         .logo {
             font-size: 1.2rem;
             font-weight: bold;
+            text-align: left;
+            background-color: #1565c0;
             color: white;
+            top: 0;
+            
+            
         }
 
         .menu a {
             color: white;
+            background-color: #1565c0;
             text-decoration: none;
+            text-align: right;
+            direction: rtl;
             padding: 6px 10px;
+            bottom: 100;
+           
+           
         }
 
         .bell {
             font-size: 1.3rem;
             color: white;
+           
+        }
+
+        .layout {
+           
         }
 
         .side {
             background: #eceff1;
             padding: 16px;
+          
         }
 
         .main {
@@ -57,6 +80,7 @@
            - 로고는 왼쪽 끝, 메뉴 묶음은 오른쪽 끝에 붙게 한다.
              (힌트: 주 축 정렬. 양 끝에 붙이고 사이를 벌리는 값이 있다)
            - 세로는 가운데 정렬한다. */
+
 
 
         /* TODO 2. 헤더를 스크롤해도 위에 고정되게 만든다.

@@ -26,6 +26,8 @@
             padding: 20px;
             border: 3px solid navy;
             background: #cfe8ff;
+            box-sizing: border-box;
+            
         }
 
         /* ============================================================
@@ -37,7 +39,8 @@
             border: 2px solid #e65100;
             background: #ffe0b2;
             padding: 10px;
-            box-sizing: border-box;
+            overflow: auto;
+           
         }
 
         /* ============================================================
@@ -46,6 +49,7 @@
         .tag {
             width: 120px;
             height: 40px;
+            display: block;
             background: #2e7d32;
             color: white;
             text-align: center;
@@ -60,13 +64,17 @@
             overflow: auto;
             border: 2px solid #6a1b9a;
             width: 300px;
+           
         }
 
         .scroll-head {
-            position: sticky;
+            
             background: #6a1b9a;
             color: white;
+            top: 0;
             padding: 8px;
+            position: sticky;
+            
         }
     </style>
     <title>[문제] 박스 모델 디버깅</title>
@@ -130,6 +138,7 @@
         바로 밑에 있는 내용과 겹쳐 보인다. 상자 크기는 그대로 두고 넘치는 부분만
         스크롤해서 볼 수 있게 만들어야 한다.
     </div>
+    
     <p>이 문단은 위 상자와 겹치면 안 된다.</p>
 
     <h3>사례 C : 크기를 줬는데 적용이 안 된다</h3>
