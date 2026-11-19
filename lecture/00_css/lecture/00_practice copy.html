@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      border: 2px black dashed;
+      background-color: grey;
+      margin-top: 10px;
+      gap: 10px;
+    }
+
+    .item {
+      background: greenyellow;
+      color: black;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .col-px {
+      /* 열의 개수와 너비를 정해주는 옵션 */
+      /* grid-template-columns: 100px 100px 100px; */
+      grid-template-columns: 100px 1fr 100px;
+    }
+
+    /* 공간의 크기를 지정해줌. */
+    .row-fix {
+      grid-template-rows: 1fr 1fr;
+    }
+
+    /* fr은 각 아이템 중, n분의 1로 나눌지. */
+    /* px은 그냥 픽셀값 */
+
+    .layout {
+      grid-template-columns: 200 1fr;
+      grid-template-rows: 60px 1fr 40px;
+      grid-template-areas: "header header" "siderbar main" "forter footer";
+      height: 300px;
+    }
+
+    /* 클래스명. 클래스 붙이면, 자식 클래스가 되는 것인가. */
+
+    .layout .head {
+      grid-area: header;
+      background: #1565c0;
+    }
+    .layout .side {
+      grid-area: sidebar;
+      background: #6a1b9a;
+    }
+    .layout .main {
+      grid-area: main;
+      background: #2e7d32;
+    }
+    .layout .foot {
+      grid-area: footer;
+      background: #455a64;
+    }
+  </style>
+  <body>
+    <h1>그리드 연습</h1>
+    <div class="container layout">
+      <div class="item head">1</div>
+      <div class="item side">2</div>
+      <div class="item main">3</div>
+      <div class="item foot">4</div>
+    </div>
+  </body>
+</html>
